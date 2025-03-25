@@ -7,7 +7,7 @@
     "start": "next start",
     "prisma": "prisma",
     "check": "opennextjs-cloudflare && tsc && wrangler deploy --dry-run",
-    "deploy": "opennextjs-cloudflare && wrangler deploy"
+    "deploy": "opennextjs-cloudflare "
   },
   "dependencies": {
     "@prisma/client": "^6.5.0",
