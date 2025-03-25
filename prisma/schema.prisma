@@ -1,0 +1,23 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Food {
+  id          Int      @id @default(autoincrement())
+  name        String
+  cholesterol Int
+}
+
+model Query {
+  id        Int      @id @default(autoincrement())
+  foodName  String   @unique
+  aiResponse String
+  count     Int      @default(1)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
