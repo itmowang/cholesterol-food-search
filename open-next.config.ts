@@ -1,4 +1,5 @@
-import cache from "@opennextjs/cloudflare/kvCache";
+// import cache from "@opennextjs/cloudflare/kvCache";
+const cache = require("@opennextjs/cloudflare/kvCache");
 
 const config = {
   default: {
