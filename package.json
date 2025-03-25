@@ -5,9 +5,7 @@
     "dev": "next dev -p 3100",
     "build": "next build",
     "start": "next start",
-    "prisma": "prisma",
-    "check": "opennextjs-cloudflare && tsc && wrangler deploy --dry-run",
-    "deploy": "opennextjs-cloudflare "
+    "prisma": "prisma"
   },
   "dependencies": {
     "@prisma/client": "^6.5.0",
@@ -19,7 +17,6 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250204.0",
-    "@opennextjs/cloudflare": "0.5.3",
     "@types/node": "22.13.13",
     "@types/react": "19.0.12",
     "autoprefixer": "^10.4.21",
