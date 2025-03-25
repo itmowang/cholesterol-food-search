@@ -1,6 +1,7 @@
 {
   "name": "cholesterol-food-search",
   "version": "1.0.0",
+  "type":"module",
   "scripts": {
     "dev": "next dev -p 3100",
     "build": "next build",
