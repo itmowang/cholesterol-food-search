@@ -2,10 +2,9 @@
   "name": "cholesterol-food-search",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next dev -p 3100",
-    "build": "next build",
-    "start": "next start",
-    "prisma": "prisma"
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "npm run pages:build && wrangler pages dev",
+    "deploy": "npm run pages:build && wrangler pages deploy"
   },
   "dependencies": {
     "@prisma/client": "^6.5.0",
