@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import fetch from 'node-fetch';
-export const runtime = "edge";
 
 type Data = {
     result?: string;
