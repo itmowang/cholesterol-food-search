@@ -19,8 +19,8 @@ export default async function handler(
         return res.status(400).json({ error: 'Invalid food name' });
     }
 
-    const accountId = process.env.CLOUDFLARE_ACCOUNT_ID;
-    const apiToken = process.env.CLOUDFLARE_API_TOKEN;
+    const accountId = process.env.CLOUDFLARE_ACCOUNT_ID || '0337e318cefc5b0d87e17a984fa60989';
+    const apiToken = process.env.CLOUDFLARE_API_TOKEN || 'WOTIDgCMgzR_KeNfokzSnr4YNQddR2970jV67uci';
     const model = '@cf/deepseek-ai/deepseek-r1-distill-qwen-32b';
     const endpoint = `https://api.cloudflare.com/client/v4/accounts/${accountId}/ai/run/${model}`;
 
